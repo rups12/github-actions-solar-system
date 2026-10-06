@@ -36,7 +36,7 @@ jobs:
            name: deployment
        steps:
          - name: install cluster
-           uses:  helm/kind-action@v1
+           uses: helm/kind-action@v1
          - run: |
             sleep 60
             kubectl -n kube-system get pod
